@@ -1,0 +1,74 @@
+.ContactUs{
+     
+        display: grid;
+        height: 400px;
+        width: 50%;
+        margin:30px;
+        padding: 40px;
+        grid-template-areas: "first last last" "phone phone phone" "massege massege massege" "email email send";
+        grid-template-columns: 60% 80% 70% 70%;
+        grid-template-rows: 50px 50px 120px 50px;
+        grid-gap: 10px;
+        row-gap: 10px;
+    
+}
+.first {
+    grid-area: first;
+    background-color: #f9f5f3;
+    border: 1px solid #000000;
+}
+
+.last {
+    grid-area: last;
+    background-color: #f9f5f3;
+    border: 1px solid #000000;
+}
+
+.phone {
+    grid-area: phone;
+    background-color: #f9f5f3;
+    border: 1px solid #000000;
+}
+
+.email {
+    grid-area: email;
+    background-color: #f9f5f3;
+    border: 1px solid #000000;
+}
+
+.massege {
+    grid-area: massege;
+    background-color: #f9f5f3;
+    border: 1px solid #000000;
+}
+
+.send {
+    grid-area: send;
+    border: 1px solid #747e74;
+    background-color: #747e74;
+}
+
+.adres {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+
+.phon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+    left: 45px;
+}

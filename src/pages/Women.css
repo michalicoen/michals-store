@@ -1,0 +1,17 @@
+.women{
+    font-size: 40px;
+    margin-top: 30px;
+    background-color: #F7F5F3;
+}
+
+.row_1 img{
+    height: 300px;
+}
+.row_1{
+    
+    display: flex;
+     justify-content:space-between;
+ }
+ .row_1 button{
+    height: 20px;
+ }

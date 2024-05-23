@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    width: 100%;
+    background-color: #E5DEDA;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.logo {
+  background-color: #E5DEDA;
+}
+
+.nav {
+    list-style-type: none;
+    display: contents;
+    background-color: #696565;
+    
+}
+
+
+.cart-img {
+    height: 40px;
+}
+.cart-count{
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55;
+    margin-left:-100px;
+    border-radius: 11px;
+    font-size: 10px;
+    background-color: red;
+    color: white;
+}
