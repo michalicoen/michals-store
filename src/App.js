@@ -12,7 +12,8 @@ import Checkout from './pages/Checkout';
 import ThankYou from './pages/ThankYou';
 import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { data } from './data';
+import { fetchData } from './fetchData';
+import { useState } from 'react';
 
 function getItemsAsArrayWithId(items) {
 	const itemsEntries = Object.entries(items);
@@ -27,7 +28,7 @@ function getItemsAsArrayWithId(items) {
 	return itemsArrayWithId;
 }
 
-function getItemById(id) {
+function getItemById(data, id) {
 	return (
 		data?.sunglassesItems?.[id] ||
 		data?.childrenItems?.[id] ||
@@ -53,6 +54,17 @@ function App() {
 	const cartItemsIds = useSelector((state) => state.cartItemsIds);
 	const cartItemsCount = useSelector((state) => state.cartItemsCount);
 	const itemsInCartCount = cartItemsIds.length;
+
+	const [data, setData] = useState();
+
+
+
+	if (!data) {
+		fetchData().then((data) => {
+			setData(data);
+		})
+		return <div>Loading...</div>;
+	}
 
 	return (
 		<div className="App">
