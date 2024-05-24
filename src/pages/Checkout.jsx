@@ -13,19 +13,6 @@ const Checkout = ({ totalPrice }) => {
   const [paymentCompleted, setPaymentCompleted] = useState(false);
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    setPaymentDetails({
-      ...paymentDetails,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setPaymentCompleted(true);
-  };
-
   if (paymentCompleted) {
     return (
       <div>
