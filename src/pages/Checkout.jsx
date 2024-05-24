@@ -5,22 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 const Checkout = ({ totalPrice }) => {
-  const [paymentDetails, setPaymentDetails] = useState({
-    cardNumber: '',
-    expiryDate: '',
-    cvv: '',
-  });
-  const [paymentCompleted, setPaymentCompleted] = useState(false);
-  const navigate = useNavigate();
-
-  if (paymentCompleted) {
-    return (
-      <div>
-        <h2>Thank you for your purchase!</h2>
-        <button onClick={() => navigate('/')}>Go to Home</button>
-      </div>
-    );
-  }
   return (
     <div>
       <div className="payment-page">
