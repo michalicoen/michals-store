@@ -37,12 +37,12 @@ function getItemById(data, id) {
 	);
 }
 
-function getItemsByIds(ids) {
+function getItemsByIds(data, ids) {
 	const items = [];
 
 	ids.forEach((id) => {
 		items.push({
-			...getItemById(id),
+			...getItemById(data, id),
 			id,
 		});
 	});
@@ -100,13 +100,13 @@ function App() {
 				/>
 				<Route
 					path="product/:id"
-					element={<Product getItemById={getItemById} />}
+					element={<Product getItemById={(id) => getItemById(data, id)} />}
 				/>
 				<Route
 					path="cart"
 					element={
 						<Cart
-							items={getItemsByIds(cartItemsIds)}
+							items={getItemsByIds(data, cartItemsIds)}
 							cartItemsCount={cartItemsCount}
 						/>
 					}

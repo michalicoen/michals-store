@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import Button from '@mui/material/Button';
 
 
-const Product = ({ getItemById}) => {
+const Product = ({ getItemById }) => {
 	const dispatch = useDispatch();
 
 
@@ -19,15 +19,15 @@ const Product = ({ getItemById}) => {
 	return (
 		<div className="Product">
 			<div className="img">
-				<img src={item.imageUrl} />
+				<img src={item.imageUrl} alt={item.name} />
 				<div className="details">
 					<h1 className="product-name">{item.name}</h1>
 					<p>${item.price}</p>
 					<p>{item.description}</p>
-				
-					 
+
+
 					<Button
-						variant="contained" style={{ color: 'white', backgroundColor:'black'}}
+						variant="contained" style={{ color: 'white', backgroundColor: 'black' }}
 						onClick={() => {
 							dispatch({
 								type: 'ADD_TO_CART',

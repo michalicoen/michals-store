@@ -1,13 +1,15 @@
-.Sunglasses{
+.Sunglasses {
     font-size: 40px;
     margin-top: 30px;
     background-color: #F7F5F3;
 }
-.sun_row{
-    
+
+.sun_row {
+
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.sun_row img{
-height: 300px;
+
+.sun_row img {
+    height: 300px;
 }

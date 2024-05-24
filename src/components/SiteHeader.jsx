@@ -4,7 +4,7 @@ import Icon from '../assets/shopping.png';
 import './header.css';
 import { Link } from 'react-router-dom';
 
-const Header = ({itemsInCartCount}) => {
+const Header = ({ itemsInCartCount }) => {
 
 	return (
 		<div className="header">
@@ -12,6 +12,7 @@ const Header = ({itemsInCartCount}) => {
 				<img
 					className="logo-img"
 					src={Logo}
+					alt="logo"
 				/>
 			</div>
 			<ul className="nav">
@@ -37,13 +38,13 @@ const Header = ({itemsInCartCount}) => {
 			<div className="cart">
 				<Link to="Cart">
 					<img
-					className="cart-img"
-					src={Icon}
-				/></Link>
+						className="cart-img"
+						src={Icon}
+					/></Link>
 			</div>
-            <div className="cart-count" >{itemsInCartCount}</div>
+			<div className="cart-count" >{itemsInCartCount}</div>
 
-            
+
 		</div>
 	);
 };

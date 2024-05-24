@@ -1,17 +1,17 @@
-.ContactUs{
-     
-        display: grid;
-        height: 400px;
-        width: 50%;
-        margin:30px;
-        padding: 40px;
-        grid-template-areas: "first last last" "phone phone phone" "massege massege massege" "email email send";
-        grid-template-columns: 60% 80% 70% 70%;
-        grid-template-rows: 50px 50px 120px 50px;
-        grid-gap: 10px;
-        row-gap: 10px;
-    
+.ContactUs {
+    display: grid;
+    height: 400px;
+    width: 50%;
+    margin: 30px;
+    padding: 40px;
+    grid-template-areas: "first last last" "phone phone phone" "massege massege massege" "email email send";
+    grid-template-columns: 60% 80% 70% 70%;
+    grid-template-rows: 50px 50px 120px 50px;
+    grid-gap: 10px;
+    row-gap: 10px;
+
 }
+
 .first {
     grid-area: first;
     background-color: #f9f5f3;

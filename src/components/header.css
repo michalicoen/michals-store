@@ -14,7 +14,7 @@
 }
 
 .logo {
-  background-color: #E5DEDA;
+    background-color: #E5DEDA;
 }
 
 .nav {
@@ -22,21 +22,22 @@
     display: contents;
     background-color: #696565;
     text-decoration: none;
-    
+
 }
 
 
 .cart-img {
     height: 40px;
 }
-.cart-count{
+
+.cart-count {
     width: 14px;
     height: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -55;
-    margin-left:-100px;
+    margin-left: -100px;
     border-radius: 11px;
     font-size: 10px;
     background-color: red;
