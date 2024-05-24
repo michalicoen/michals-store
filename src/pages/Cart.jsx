@@ -6,16 +6,23 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
+import { useState } from 'react';
 
 
-const handleDelete = () => {
-  
-};
+
 const Cart = ({items, cartItemsCount}) => {
-  console.log(items, cartItemsCount)
   const totalPrice = items.reduce((acc, item) => {
     return acc += (item.price * cartItemsCount[item.id]);
   }, 0);
+
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowDetails = (id) => {
+    setSelectedItem(id);
+    setShowModal(true);
+  };
+
   const dispatch = useDispatch();
 
   const handleIncrement = (id) => {
@@ -24,6 +31,12 @@ const Cart = ({items, cartItemsCount}) => {
 
   const handleDecrement = (id) => {
     dispatch({ type: 'REMOVE_FROM_CART', payload: { id } });
+  };
+  const removeItemFromCart = (id) => {
+    dispatch({
+      type: 'REMOVE_ITEM_FROM_CART',
+      payload: {id},
+    });
   };
 
   if (!items.length) {
@@ -42,7 +55,7 @@ const Cart = ({items, cartItemsCount}) => {
               
 						<div className="product1" key={item.id}>
                 <div>
-            <IconButton aria-label="delete" onClick={handleDelete}style={{ color: 'black',top:"50px" }}>
+            <IconButton aria-label="delete" onClick={removeItemFromCart}style={{ color: 'black',top:"50px" }}>
             <DeleteIcon />
             </IconButton>
               </div>
@@ -50,6 +63,7 @@ const Cart = ({items, cartItemsCount}) => {
 							<div className="product">
 								<p>{item.name}</p>
 								<p>${item.price}</p>
+                <button onClick={() => handleShowDetails(item.id)}>Show Details</button>
 								<div className="cart-total">
                   <Button  onClick={() => handleDecrement(item.id)}style={{ color: 'black' }}>-</Button>
                   <span>{cartItemsCount[item.id]}</span>

@@ -45,6 +45,15 @@ const reducer = (state = initialState, action) => {
           [action.payload.id]: 0
         }
 			};
+      case 'REMOVE_ITEM_FROM_CART': // הוספת מקרה חדש
+      return {
+        ...state,
+        cartItemsIds: state.cartItemsIds.filter((id) => id !== action.payload.id),
+        cartItemsCount: {
+          ...state.cartItemsCount,
+          [action.payload.id]: 0,
+        },
+      }
 		default:
 			return state;
 	}
