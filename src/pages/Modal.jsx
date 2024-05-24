@@ -1,18 +1,18 @@
 import React from 'react'
 import './Modal.css';
 
-const Modal = ({ items, setShowModal }) => {
-  if (!items) return null;
+const Modal = ({ item, close }) => {
+  if (!item) return null;
 
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <button className="modal-close" onClick={() => setShowModal(false)}>
+        <button className="modal-close" onClick={() => close()}>
           X
         </button>
-        <h2>{items.name}</h2>
-        <p>{items.description}</p>
-        <p>Price: ${items.price}</p>
+        <h2>{item.name}</h2>
+        <p>{item.description}</p>
+        <p>Price: ${item.price}</p>
       </div>
     </div>
   );

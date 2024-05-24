@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 import { useState } from 'react';
+import Modal from './Modal';
 
 
 
@@ -44,6 +45,12 @@ const Cart = ({ items, cartItemsCount }) => {
 
   return (
     <div className="shopping-cart">
+      {showModal && (
+        <Modal
+          item={selectedItem}
+          close={() => setShowModal(false)}
+        />
+      )}
       <h1>MY CART </h1>
       <hr className='hr' />
       <div className='sartProduct'>
