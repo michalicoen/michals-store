@@ -1,8 +1,6 @@
 import React from 'react';
 import './Checkout.css';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
 
 const Checkout = ({ totalPrice }) => {
   return (
