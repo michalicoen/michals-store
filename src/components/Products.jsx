@@ -21,7 +21,7 @@ const Products = ({ pageData }) => {
 							key={item.id}
 							className="products-item"
 						>
-							<img src={item.imageUrl} />
+							<img src={item.imageUrl} alt={item.name} />
 							<p>{item.name}</p>
 							<div>${item.price}</div>
 
@@ -41,7 +41,6 @@ const Products = ({ pageData }) => {
 								<Button
 									variant="contained"
 									style={{ color: 'black' }}
-									// variant="contained"
 									onClick={() => {
 										dispatch({
 											type: 'ADD_TO_CART',

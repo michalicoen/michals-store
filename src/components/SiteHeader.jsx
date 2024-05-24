@@ -40,6 +40,7 @@ const Header = ({ itemsInCartCount }) => {
 					<img
 						className="cart-img"
 						src={Icon}
+						alt="cart"
 					/></Link>
 			</div>
 			<div className="cart-count" >{itemsInCartCount}</div>
