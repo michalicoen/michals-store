@@ -3,37 +3,37 @@
     "item1000": {
       "name": "Ray Ban",
       "price": 299,
-      "imageUrl": "kids7.jpg",
+      "imageUrl": "/kids7.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item1001": {
       "name": "CATTLEYA",
       "price": 290,
-      "imageUrl": "kids8.jpg",
+      "imageUrl": "/kids8.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item1002": {
       "name": "Ray Ban",
       "price": 150,
-      "imageUrl": "kids3.jpg",
+      "imageUrl": "/kids3.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item1003": {
       "name": "Ray Ban",
       "price": 259,
-      "imageUrl": "kids4.jpg",
+      "imageUrl": "/kids4.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item1004": {
       "name": "CATTLEYA",
       "price": 299,
-      "imageUrl": "kids5.jpg",
+      "imageUrl": "/kids5.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item1005": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "kids6.jpg",
+      "imageUrl": "/kids6.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     }
   },
@@ -41,55 +41,55 @@
     "item2000": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "women1(2).jpg",
+      "imageUrl": "/women1(2).jpg",
       "description": "Unisex eyeglasses with a thick square acetate frame in a variety of colors."
     },
     "item2001": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens2.jpg",
+      "imageUrl": "/womens2.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item2002": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens3.jpg",
+      "imageUrl": "/womens3.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item2003": {
       "name": "CATTLEYA",
       "price": 199,
-      "imageUrl": "womens4.jpg",
+      "imageUrl": "/womens4.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item2004": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens5.jpg",
+      "imageUrl": "/womens5.jpg",
       "description": "Eyeglasses for women, thin cat frame and thin temples for a delicate and precise look"
     },
     "item2005": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens6.jpg",
+      "imageUrl": "/womens6.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item2006": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens7.jpg",
+      "imageUrl": "/womens7.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item2007": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens8.jpg",
+      "imageUrl": "/womens8.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item2008": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "womens9.jpg",
+      "imageUrl": "/womens9.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     }
   },
@@ -97,55 +97,55 @@
     "item3000": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men1.jpg",
+      "imageUrl": "/men1.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3001": {
       "name": "Ray Ban",
       "price": 280,
-      "imageUrl": "men2.jpg",
+      "imageUrl": "/men2.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3002": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men3.jpg",
+      "imageUrl": "/men3.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3003": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men4.jpg",
+      "imageUrl": "/men4.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3004": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men5.jpg",
+      "imageUrl": "/men5.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3005": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men6.jpg",
+      "imageUrl": "/men6.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3006": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men7.jpg",
+      "imageUrl": "/men7.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3007": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men8.jpg",
+      "imageUrl": "/men8.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item3008": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "men9.jpg",
+      "imageUrl": "/men9.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     }
   },
@@ -153,37 +153,37 @@
     "item4000": {
       "name": "carven",
       "price": 299,
-      "imageUrl": "sunglasses1.jpg",
+      "imageUrl": "/sunglasses1.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item4001": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "sunglasses2.jpg",
+      "imageUrl": "/sunglasses2.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item4002": {
       "name": "pual & joe",
       "price": 199,
-      "imageUrl": "sunglasses3.jpg",
+      "imageUrl": "/sunglasses3.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item4003": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "sunglasses4.jpg",
+      "imageUrl": "/sunglasses4.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item4004": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "sunglasses5.jpg",
+      "imageUrl": "/sunglasses5.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     },
     "item4005": {
       "name": "Ray Ban",
       "price": 199,
-      "imageUrl": "sunglasses6.jpg",
+      "imageUrl": "/sunglasses6.jpg",
       "description": "hhhhhjjo mmmkkk rrrrtddfsd"
     }
   }

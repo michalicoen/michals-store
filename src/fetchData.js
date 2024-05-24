@@ -1,6 +1,6 @@
 export async function fetchData() {
   try {
-    const response = await fetch('storeData.json');
+    const response = await fetch('/storeData.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

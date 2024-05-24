@@ -2,21 +2,36 @@ import './App.css';
 import Header from './components/SiteHeader';
 import HomePage from './pages/HomePage';
 import ContactUs from './pages/ContactUs';
-import Womens from './pages/Womens';
-import Men from './pages/Men';
-import Childrens from './pages/Childrens';
-import Sunglasses from './pages/Sunglasses';
-import Product from './pages/Product';
+import WomensPage from './pages/Womens';
+import MenPage from './pages/Men';
+import ChildrensPage from './pages/Childrens';
+import SunglassesPage from './pages/Sunglasses';
+import ProductPage from './pages/Product';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import ThankYou from './pages/ThankYou';
 import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { fetchData } from './fetchData';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Loader } from './components/Loader';
 
+function withLoader(Comonent) {
+	return ({ data, ...rest }) => {
+		return data ? <Comonent data={data} {...rest} /> : <Loader />;
+	};
+}
+
+const Product = withLoader(ProductPage);
+const Womens = withLoader(WomensPage);
+const Men = withLoader(MenPage);
+const Childrens = withLoader(ChildrensPage);
+const Sunglasses = withLoader(SunglassesPage);
+
 function getItemsAsArrayWithId(items) {
+	if (!items) {
+		return [];
+	}
 	const itemsEntries = Object.entries(items);
 
 	const itemsArrayWithId = itemsEntries.map((entry) => {
@@ -58,14 +73,11 @@ function App() {
 
 	const [data, setData] = useState();
 
-
-
-	if (!data) {
+	useEffect(() => {
 		fetchData().then((data) => {
 			setData(data);
-		})
-		return <Loader />;
-	}
+		});
+	}, []);
 
 	return (
 		<div className="App">
@@ -77,7 +89,7 @@ function App() {
 				/>
 				<Route
 					path="womens"
-					element={<Womens items={getItemsAsArrayWithId(data.womenItems)} />}
+					element={<Womens data={data} items={getItemsAsArrayWithId(data?.womenItems)} />}
 				/>
 				<Route
 					path="contact-us"
@@ -85,23 +97,23 @@ function App() {
 				/>
 				<Route
 					path="men"
-					element={<Men items={getItemsAsArrayWithId(data.menItems)} />}
+					element={<Men data={data} items={getItemsAsArrayWithId(data?.menItems)} />}
 				/>
 				<Route
 					path="childrens"
 					element={
-						<Childrens items={getItemsAsArrayWithId(data.childrenItems)} />
+						<Childrens data={data} items={getItemsAsArrayWithId(data?.childrenItems)} />
 					}
 				/>
 				<Route
 					path="sunglasses"
 					element={
-						<Sunglasses items={getItemsAsArrayWithId(data.sunglassesItems)} />
+						<Sunglasses data={data} items={getItemsAsArrayWithId(data?.sunglassesItems)} />
 					}
 				/>
 				<Route
 					path="product/:id"
-					element={<Product getItemById={(id) => getItemById(data, id)} />}
+					element={<Product data={data} getItemById={(id) => getItemById(data, id)} />}
 				/>
 				<Route
 					path="cart"
