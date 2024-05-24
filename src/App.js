@@ -14,6 +14,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { fetchData } from './fetchData';
 import { useState } from 'react';
+import { Loader } from './components/Loader';
 
 function getItemsAsArrayWithId(items) {
 	const itemsEntries = Object.entries(items);
@@ -63,7 +64,7 @@ function App() {
 		fetchData().then((data) => {
 			setData(data);
 		})
-		return <div>Loading...</div>;
+		return <Loader />;
 	}
 
 	return (
